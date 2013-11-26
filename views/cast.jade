@@ -1,0 +1,10 @@
+extends layout
+
+block content
+
+  if data
+    div.container
+      h1= title
+      ul
+        each person in data
+          li= person.name
